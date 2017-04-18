@@ -1,0 +1,146 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/Unitech/pm2-interface"
+
+    >pm2-interface (v2.0.4)</a>
+</h1>
+<h4>Interact with pm2 via RPC and receive real time notifications</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pm2-interface">module pm2-interface</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pm2-interface.pm2-interface">
+            function <span class="apidocSignatureSpan"></span>pm2-interface
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pm2-interface.toString">
+            function <span class="apidocSignatureSpan">pm2-interface.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pm2-interface" id="apidoc.module.pm2-interface">module pm2-interface</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pm2-interface.pm2-interface" id="apidoc.element.pm2-interface.pm2-interface">
+        function <span class="apidocSignatureSpan"></span>pm2-interface
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pm2-interface = function (opts){
+  var sub_port  = opts &#x26;&#x26; opts.sub_port  || cst.DAEMON_PUB_PORT;
+  var rpc_port  = opts &#x26;&#x26; opts.rpc_port  || cst.DAEMON_RPC_PORT;
+  var bind_host = opts &#x26;&#x26; opts.bind_host || cst.DAEMON_BIND_HOST;
+
+  return new IPM2(sub_port, rpc_port, bind_host);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pm2-interface.toString" id="apidoc.element.pm2-interface.toString">
+        function <span class="apidocSignatureSpan">pm2-interface.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+var myMemoryLeak = []
+
+setInterval( function () {
+  var object = {}
+  for (var i = 0; i &#x3c; 10000; i++) {
+    object[&#x22;key&#x22;+i] = Math.random().<span class="apidocCodeKeywordSpan">toString</span>(36).substring(7)
+  }
+
+  myMemoryLeak.push(object)
+
+}, Math.round(Math.random()*2000))
+```
+in monitoring script
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
