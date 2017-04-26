@@ -70,15 +70,6 @@
 
         </li>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.pm2-interface.toString">
-            function <span class="apidocSignatureSpan">pm2-interface.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
@@ -102,37 +93,6 @@
   return new IPM2(sub_port, rpc_port, bind_host);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.pm2-interface.toString" id="apidoc.element.pm2-interface.toString">
-        function <span class="apidocSignatureSpan">pm2-interface.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-}
-
-var myMemoryLeak = []
-
-setInterval( function () {
-  var object = {}
-  for (var i = 0; i &#x3c; 10000; i++) {
-    object[&#x22;key&#x22;+i] = Math.random().<span class="apidocCodeKeywordSpan">toString</span>(36).substring(7)
-  }
-
-  myMemoryLeak.push(object)
-
-}, Math.round(Math.random()*2000))
-```
-in monitoring script
-...</pre></li>
     </ul>
 
 
