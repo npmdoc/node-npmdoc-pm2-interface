@@ -1,6 +1,6 @@
 # npmdoc-pm2-interface
 
-#### api documentation for  [pm2-interface (v2.0.4)](https://github.com/Unitech/pm2-interface)  [![npm package](https://img.shields.io/npm/v/npmdoc-pm2-interface.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-pm2-interface) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-pm2-interface.svg)](https://travis-ci.org/npmdoc/node-npmdoc-pm2-interface)
+#### basic api documentation for  [pm2-interface (v2.0.4)](https://github.com/Unitech/pm2-interface)  [![npm package](https://img.shields.io/npm/v/npmdoc-pm2-interface.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-pm2-interface) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-pm2-interface.svg)](https://travis-ci.org/npmdoc/node-npmdoc-pm2-interface)
 
 #### Interact with pm2 via RPC and receive real time notifications
 
@@ -77,7 +77,8 @@
         "url": "git://github.com/Unitech/pm2-interface.git"
     },
     "scripts": {},
-    "version": "2.0.4"
+    "version": "2.0.4",
+    "bin": {}
 }
 ```
 
